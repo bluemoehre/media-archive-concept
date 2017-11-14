@@ -1,2 +1,23 @@
 # media-archive-concept
 Concept for storing, archiving and managing large amounts of media regarding folder structures, naming of files, meta tagging based upon Vorbis comment, MKV.
+
+## Audio files
+
+### Metadata
+| Req | Field                 | Multi | Value             | Description                                                                                                                                                                                           |
+|:--------:|-----------------------|:----------:|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     ☑    | RELEASE               |      ☐     | This is it        | Title of the release                                                                                                                                                                                  |
+|     ☑    | RELEASE_ARTIST        |      ☐     | Michael Jackson   | The official artist of the release as a single string                                                                                                                                                 |
+|     ☑    | RELEASE_DATE          |      ☐     | 2009              | Date when the release was published (beware of the difference vs. **DATE**) - format is `YYYY-MM-DD` - value MUST contain a year - value MAY contain a month - value MAY contain a day                    |
+|     ☑    | RELEASE_TYPE          |      ☐     | album             | Type of the release (e.g. `album`/`maxi`/`single`/`sampler`/`soundtrack`)                                                                                                                             |
+|     ☑    | RELEASE_TOTAL_TRACKS  |      ☐     | 16                | Total track count of the release (when having multiple mediums, this will be the total track count of all mediums)                                                                                    |
+|     ☑    | RELEASE_TRACK_NUMBER  |      ☐     | 16                | The track's number on the release                                                                                                                                                                     |
+|     ☐    | RELEASE_TOTAL_MEDIUMS |      ☐     | 1                 | The release's total medium count (physical media only - e.g. vinyl / CD)                                                                                                                              |
+|     ☐    | RELEASE_MEDIUM_NUMBER |      ☐     | 1                 | The medium number the track was on (physical media only - e.g. vinyl / CD)                                                                                                                            |
+|     ☐    | RELEASE_MEDIUM_TITLE  |      ☐     |                   | The title of the medium the track was on  (e.g. for vinyl: `Side A`; for CD: `Remix Versions`)                                                                                                        |
+|     ☑    | ARTIST                |      ☐     | Michael Jackson   | The artists of the track as a single string (this string may contain text like: `vs.`/`feat.`/`and`/`with`) - by default an artists name begins an upper-case letter                                  |
+|     ☑    | ARTISTS               |      ☑     | <ul><li>Michael Jackson</li></ul> | The artists of the track as separated values                                                                                                                                                          |
+|     ☑    | TITLE                 |      ☐     | This is it        | The track's title                                                                                                                                                                                     |
+|     ☐    | VERSION               |      ☐     | Orchestra Version | The track's version / edit / remix                                                                                                                                                                    |
+|     ☑    | DATE                  |      ☐     | 2009              | Date when this trackg was initially published (beware of the difference vs. **RELEASE_DATE**) - format is `YYYY-MM-DD` - value MUST contain a year  - value MAY contain a month - value MAY contain a day |
+|     ☑    | GENRE                 |      ☑     | <ul><li>Soul</li><li>Acoustic</li></ul> | All matching genres of the song   |
