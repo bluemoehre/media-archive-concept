@@ -50,43 +50,54 @@ Note: Due most metadata models are dealing with key/value pairs only, this part 
 
 #### Fields
 
-- **TRACK_NUMBER** ( `number` ) _optional_; _single-valued_ \
+- **TRACK_NUMBER** ( `number` ) _optional_; _single-valued_
+
   The track's number on the release. (When having multiple mediums, this will be serially numbered.)
 
-- **ARTIST** ( `string` ) _required_; _multi-valued_ \
+- **ARTIST** ( `string` ) _required_; _multi-valued_
+
   The artists of the track as separated values. \
   These values must only contain artist names. \
   By default each artist's name part begins with an upper-case letter.
 
-- **ARTIST_DISPLAY** ( `string` ) _required_; _single-valued_ \
+- **ARTIST_DISPLAY** ( `string` ) _required_; _single-valued_
+
   The artists of the track as a single string. \
   This string may contain text like: `vs.` / `feat.` / `and` / `with`. \
   By default an artist's name begins with an upper-case letter.
 
-- **TITLE** ( `string` ) _required_; _single-valued_ \
+- **TITLE** ( `string` ) _required_; _single-valued_
+
   The track's title
 
-- **VERSION** ( `string` ) _optional_; _single-valued_ \
+- **VERSION** ( `string` ) _optional_; _single-valued_
+
   The track's version / edit / remix
 
-- **DATE** ( `date` ) _required_; _single-valued_ \
+- **DATE** ( `date` ) _required_; _single-valued_
+
   Date when this track was initially published. (Be aware of the difference vs. [**RELEASE_DATE**](#DATE)!)
 
-- **GENRE** ( `string` ) _required_; _multi-valued_ \
+- **GENRE** ( `string` ) _required_; _multi-valued_
+
   All matching genres of the song (in order of ratio descending).
 
-- **VOCALS** ( `bool` ) _required_; _single-valued_ \
+- **VOCALS** ( `bool` ) _required_; _single-valued_ 
+
   `True` if the track contain vocals. \
   `False` if the track is instrumental only.
 
-- **MOOD** ( `happy` | `bright` | `sad` | `dark` ) _required_; _single-valued_ \
+- **MOOD** ( `happy` | `bright` | `sad` | `dark` ) _required_; _single-valued_ 
+
   Subjective mood of the track. \
   @TODO: extend possible values or allow any string
 
-- **TEMPO** ( `very slow` | `slow` | `normal` | `fast` | `very fast` | `extreme` ) _required_; _multi-valued_ \
+- **TEMPO** ( `very slow` | `slow` | `normal` | `fast` | `very fast` | `extreme` ) _required_; _multi-valued_ 
+
   Subjective tempo of the track.
 
-- **BPM** ( `number` ) _optional_; _multi-valued_ \
+- **BPM** ( `number` ) _optional_; _multi-valued_ 
+
   Average beats per minute **OR** all different values of all sections of the track in order of quantity descending.
 
 - **COPYRIGHT** ( `string` ) _optional_; _single-valued_ 
@@ -95,34 +106,44 @@ Note: Due most metadata models are dealing with key/value pairs only, this part 
 
 - **LYRICS** ( `text` ) _optional_; _single-valued_ 
 
-- **RELEASE** ( `string` ) _required_; _single-valued_ \
+- **RELEASE** ( `string` ) _required_; _single-valued_
+
   Title of the release
 
-- **RELEASE_ARTIST** ( `string` ) _required_; _single-valued_ \
+- **RELEASE_ARTIST** ( `string` ) _required_; _single-valued_
+
   The official artist of the release. \
   This string may contain text like: `vs.` / `feat.` / `and` / `with`. \
   By default an artist's name begins with an upper-case letter.
 
-- **RELEASE_DATE** ( `date` ) _required_; _single-valued_ \
+- **RELEASE_DATE** ( `date` ) _required_; _single-valued_ 
+
   Date when the release was published. (Be aware of the difference vs. [**DATE**](#DATE)!)
 
-- **RELEASE_TYPE** ( `string` ) _required_; _single-valued_ \
+- **RELEASE_TYPE** ( `string` ) _required_; _single-valued_ 
+
   Type of the release (e.g. `single` | `maxi` | `album` | `sampler`)
 
-- **RELEASE_TOTAL_TRACKS** ( `number` ) _optional_; _single-valued_ \
+- **RELEASE_TOTAL_TRACKS** ( `number` ) _optional_; _single-valued_ 
+
   Total track count of the release. (When having multiple mediums, this will be the total track count of all mediums.)
 
-- **RELEASE_TOTAL_MEDIUMS** ( `number` ) _optional_; _single-valued_ \
+- **RELEASE_TOTAL_MEDIUMS** ( `number` ) _optional_; _single-valued_ 
+
   The release's total medium count. (Physical mediums only - e.g. Vinyl / Compact Disc) 
 
-- **RELEASE_MEDIUM_NUMBER** ( `number` ) _optional_; _single-valued_ \
+- **RELEASE_MEDIUM_NUMBER** ( `number` ) _optional_; _single-valued_ 
+
   The medium number the track was on. (Physical mediums only - e.g. Vinyl / Compact Disc) 
 
-- **RELEASE_MEDIUM_TITLE** ( `string` ) _optional_; _single-valued_ \
+- **RELEASE_MEDIUM_TITLE** ( `string` ) _optional_; _single-valued_ 
+
   The title of the medium the track was on (e.g. `Side A` | `Summer Disc` | `Mixed by DJ`)
 
 - **SOURCE** ( `string` ) _required_; _single-valued_ 
+
   Where the file comes from (e.g. `download` | `cd` | `vinyl` )
 
 - **RETAILER** ( `string` ) _optional_; _single-valued_ 
+
   Who sold you the file (e.g. `Junodownload` | `iTunes` | `Beatport`)
