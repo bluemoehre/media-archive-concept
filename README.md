@@ -10,31 +10,31 @@ Concept for storing, archiving and managing large amounts of media regarding fol
 
 #### Example
 
-| Req   | Field                                           | Multi | Value                                                             |
-| :---: | ----------------------------------------------- | :---: | ----------------------------------------------------------------- |
-| ☑     | [TRACK_NUMBER](#TRACK_NUMBER)                   | ☐     | 5                                                                 |
+| Req   | Field                                           | Multi | Value                                                                 |
+| :---: | ----------------------------------------------- | :---: | --------------------------------------------------------------------- |
+| ☑     | [TRACK_NUMBER](#TRACK_NUMBER)                   | ☐     | 5                                                                     |
 | ☑     | [ARTIST](#ARTIST)                               | ☐     | `Axwell`; `Ingrosso`; `Steve Angello`; `Laidback Luke`; `Deborah Cox` |
-| ☐     | [ARTIST_DISPLAY](#ARTIST_DISPLAY)               | ☑     | Axwell, Ingrosso, Steve Angello, Laidback Luke feat. Deborah Cox  |
-| ☑     | [TITLE](#TITLE)                                 | ☐     | Leave The World Behind                                            |
-| ☐     | [VERSION](#VERSION)                             | ☐     | Dimitri Vegas & Like Mike vs. Shm Dark Forest Edit                |
-| ☑     | [DATE](#DATE)                                   | ☐     | 2009                                                              |
-| ☑     | [GENRE](#GENRE)                                 | ☑     | `House`; `Electro`; `Trance`                                        |
-| ☑     | [VOCALS](#VOCALS)                               | ☐     | true                                                              |
-| ☑     | [MOOD](#MOOD)                                   | ☑     | true                                                              |
-| ☑     | [TEMPO](#TEMPO)                                 | ☑     | fast                                                              |
-| ☐     | [BPM](#TEMPO)                                   | ☑     | 128                                                               |
-| ☑     | [COPYRIGHT](#COPYRIGHT)                         | ☐     | Axtone Records Ltd. 2009                                          |
-| ☑     | [PUBLISHER](#PUBLISHER)                         | ☐     | IIP-DDS                                                           |
-| ☑     | [RELEASE](#RELEASE)                             | ☐     | Leave The World Behind                                            |
-| ☑     | [RELEASE_ARTIST](#RELEASE_ARTIST)               | ☐     | Axwell, Ingrosso, Steve Angello, Laidback Luke feat. Deborah Cox  |
-| ☑     | [RELEASE_DATE](#RELEASE_DATE)                   | ☐     | 2009                                                              |
-| ☑     | [RELEASE_TYPE](#RELEASE_TYPE)                   | ☐     | single                                                            |
-| ☑     | [RELEASE_TOTAL_TRACKS](#RELEASE_TOTAL_TRACKS)   | ☐     | 7                                                                 |
-| ☐     | [RELEASE_TOTAL_MEDIUMS](#RELEASE_TOTAL_MEDIUMS) | ☐     | 1                                                                 |
-| ☐     | [RELEASE_MEDIUM_NUMBER](#RELEASE_MEDIUM_NUMBER) | ☐     | 1                                                                 |
-| ☐     | [RELEASE_MEDIUM_TITLE](#RELEASE_MEDIUM_TITLE)   | ☐     |                                                                   |
-| ☑     | [SOURCE](#SOURCE)                               | ☐     | IIP-DDS                                                           |
-| ☐     | [RETAILER](#RETAILER)                           | ☐     | IIP-DDS                                                           |
+| ☐     | [ARTIST_DISPLAY](#ARTIST_DISPLAY)               | ☑     | Axwell, Ingrosso, Steve Angello, Laidback Luke feat. Deborah Cox      |
+| ☑     | [TITLE](#TITLE)                                 | ☐     | Leave The World Behind                                                |
+| ☐     | [VERSION](#VERSION)                             | ☐     | Dimitri Vegas & Like Mike vs. Shm Dark Forest Edit                    |
+| ☑     | [DATE](#DATE)                                   | ☐     | 2009                                                                  |
+| ☑     | [GENRE](#GENRE)                                 | ☑     | `House`; `Electro`; `Trance`                                          |
+| ☑     | [VOCALS](#VOCALS)                               | ☐     | true                                                                  |
+| ☑     | [MOOD](#MOOD)                                   | ☑     | true                                                                  |
+| ☑     | [TEMPO](#TEMPO)                                 | ☑     | fast                                                                  |
+| ☐     | [BPM](#TEMPO)                                   | ☑     | 128                                                                   |
+| ☑     | [COPYRIGHT](#COPYRIGHT)                         | ☐     | Axtone Records Ltd. 2009                                              |
+| ☑     | [PUBLISHER](#PUBLISHER)                         | ☐     | IIP-DDS                                                               |
+| ☑     | [RELEASE](#RELEASE)                             | ☐     | Leave The World Behind                                                |
+| ☑     | [RELEASE_ARTIST](#RELEASE_ARTIST)               | ☐     | Axwell, Ingrosso, Steve Angello, Laidback Luke feat. Deborah Cox      |
+| ☑     | [RELEASE_DATE](#RELEASE_DATE)                   | ☐     | 2009                                                                  |
+| ☑     | [RELEASE_TYPE](#RELEASE_TYPE)                   | ☐     | single                                                                |
+| ☑     | [RELEASE_TOTAL_TRACKS](#RELEASE_TOTAL_TRACKS)   | ☐     | 7                                                                     |
+| ☐     | [RELEASE_TOTAL_MEDIUMS](#RELEASE_TOTAL_MEDIUMS) | ☐     | 1                                                                     |
+| ☐     | [RELEASE_MEDIUM_NUMBER](#RELEASE_MEDIUM_NUMBER) | ☐     | 1                                                                     |
+| ☐     | [RELEASE_MEDIUM_TITLE](#RELEASE_MEDIUM_TITLE)   | ☐     |                                                                       |
+| ☑     | [SOURCE](#SOURCE)                               | ☐     | webshop                                                               |
+| ☐     | [RETAILER](#RETAILER)                           | ☐     | Junodownload                                                          |
 
 
 #### Data Types
