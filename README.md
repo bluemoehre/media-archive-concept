@@ -48,6 +48,32 @@ Concept for storing, archiving and managing large amounts of media regarding fol
 Note: Due most metadata models are dealing with key/value pairs only, this part is kind of virtual.
 
 
+#### Stylized Names
+
+Some artists use non-word characters, special capitalization or special phonetics in their names for design purposes. \
+In this case a regular and/or normalized version must be provided, so humans can search in all ways and machines are able to differentiate correctly. \
+*Choose wisely how these fields are filled, think on origins and languages and expect some research on the artist! \
+Also be prepared for some future changes introduced by labels or bands*
+
+##### Examples
+
+| Stylized | Regular | Normalized |
+| --- | --- | --- |
+| \*NSYNC<br/>'N Sync `deprecated` | NSYNC | |
+| 3OH!3 | 3OH3 | Three Oh Three |
+| 3LAU | Blau | |
+| DJs @ Work | DJs @ Work | DJs at Work |
+| Florence + the Machine | Florence and the Machine | |
+| Ich + Ich | Ich und Ich | | 
+| JAWNY | Jawny | |
+| Ke$ha | Kesha | |
+| Raindropz! | Raindropz | Raindrops | 
+| Snap! | Snap | |
+
+*Be aware of '+' may be part of the band's name OR to describe a co-production!*
+
+
+
 #### Fields
 
 - <a name="track_number">**TRACK_NUMBER**</a> ( `number` ) _optional_; _single-valued_
@@ -58,12 +84,14 @@ Note: Due most metadata models are dealing with key/value pairs only, this part 
 
   The artists of the track as separated values. \
   These values must only contain artist names. \
+  Stylized names must **not** be used but regular ones. \
   By default each artist's name part begins with an upper-case letter.
 
 - <a name="artist_display">**ARTIST_DISPLAY**</a> ( `string` ) _required_; _single-valued_
 
   The artists of the track as a single string. \
-  This string may contain text like: `vs.` / `feat.` / `and` / `with`. \
+  This string may contain words like `vs.` / `feat.` / `and` / `with`. \
+  Stylized names must be used here if available. \
   By default an artist's name begins with an upper-case letter.
 
 - <a name="title">**TITLE**</a> ( `string` ) _required_; _single-valued_
