@@ -48,6 +48,22 @@ Concept for storing, archiving and managing large amounts of media regarding fol
 Note: Due most metadata models are dealing with key/value pairs only, this part is kind of virtual.
 
 
+#### Special Words
+
+|- Meaning -| Default | Variations |
+| --- | --- | --- |
+| and | **&** | `,` `+` `x` `and` |
+| featuring | **feat.** | `ft.` `featuring` |
+| versus | **vs.** | `X` `versus` |
+
+##### Examples
+
+- A, B & C
+- X feat. A, B & C
+- A vs. B vs. C
+- X & Y feat. A vs. B & C
+
+
 #### Stylized Names
 
 Some artists use non-word characters, special capitalization or special phonetics in their names for design purposes. \
@@ -71,7 +87,6 @@ Also be prepared for some future changes introduced by labels or bands*
 | Snap! | Snap | |
 
 *Be aware of '+' may be part of the band's name OR to describe a co-production!*
-
 
 
 #### Fields
