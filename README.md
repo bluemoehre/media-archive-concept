@@ -20,6 +20,7 @@ Concept for storing, archiving and managing large amounts of media regarding fol
 | ☑     | [DATE](#date)                                   | ☐     | 2009                                                                  |
 | ☑     | [GENRE](#genre)                                 | ☑     | `House`; `Electro`; `Trance`                                          |
 | ☑     | [VOCALS](#vocals)                               | ☐     | true                                                                  |
+| ☐     | [EXPLICIT](#explicit)                           | ☐     | false                                                                 |
 | ☑     | [LANGUAGE](#language)                           | ☑     | `en`                                                                  |
 | ☑     | [MOOD](#mood)                                   | ☑     | `happy` `energetic`                                                   |
 | ☑     | [TEMPO](#tempo)                                 | ☑     | fast                                                                  |
@@ -130,6 +131,14 @@ Also be prepared for some future changes introduced by labels or bands*
 
   `true` if the track contain vocals. \
   `false` if the track is instrumental only.
+  
+- <a name="explicit">**EXPLICIT**</a> ( `bool` ) _optional_; _single-valued_ 
+
+  `true` if the track contains explicit language. \
+  `false` if the track does not contain explicit language.
+  
+  Defaults to `false` if not set. 
+  Must be `false` if present and <a name="vocals">**VOCALS**</a> is `false`.
   
 - <a name="language">**LANGUAGE**</a> ( `string` ) _optional_; _multi-valued_ 
   
